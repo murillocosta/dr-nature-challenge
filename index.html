@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Doutor Nature</title>
+  </head>
+  <body>
+    <header class="shadow position-fixed w-100">
+      <nav class="navbar navbar-light">
+        <div class="mx-auto">
+          <a class="navbar-brand" href="#">
+            <img loading="lazy" src="assets/logo_Doutor-Nature.svg" alt="Logo Doutor Nature" width="150" height="50" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="d-flex flex-column justify-content-between align-items-center text-center section landing__section">
+      <div class="my-5">
+        <h1 class="my-5">
+          O jeito certo de hidratar a pele<br />
+          tipo "crepe"
+        </h1>
+        <h2>E por que a indústria de cosméticos nunca falou sobre isso...</h2>
+      </div>
+
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/5lDhkpEGgj8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <a id="arrow" onclick="arrowClicked()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+          />
+        </svg>
+      </a>
+    </section>
+
+    <section
+      class="container section text-center p-4 d-flex flex-column align-items-center justify-content-evenly dr_rafael__section"
+      id="dr_rafael__section"
+    >
+      <div class="text-center">
+        <h1>
+          Por que cremes não hidratam<br />
+          esse tipo de pele "crepe"?
+        </h1>
+        <h3>Descubra uma alternativa mais eficiente.</h3>
+      </div>
+
+      <article class="d-flex flex-column align-items-start w-75">
+        <p class="text-start mb-4">
+          Em minhas pesquisas descobri que
+          <span class="text__highligth"
+            >cremes hidratantes comuns, não funcionam<br />
+            em peles finas e ressecadas</span
+          >, com aparência amassada, que popularmente são<br />
+          chamadas de "pele crepe".
+        </p>
+        <p class="text-start mb-4">
+          A razão disso é
+          <span class="text__highligth"
+            >porque existem pequenas rachaduras na superfície desse tipo<br />
+            de pele</span
+          >, por onde a água vaza. Dessa forma,
+          <span class="text__highligth"
+            >não adianta insistir aplicando<br />
+            cremes hidratantes</span
+          >, pois sua pele não vai reter a hidratação.
+        </p>
+        <p class="text-start mb-4">
+          Já quando você ingere alguns compostos específicos, e passa a hidratar sua pele<br />
+          de dentro para fora,
+          <span class="text__highligth">aí o jogo vira a seu favor. Active Anti Ox</span>
+          é uma fórmula que<br />
+          desenvolvi junto de minha equipe, para ajudar a hidratar e recuperar sua pele,<br />
+          <span class="text__highligth">agindo de dentro para fora.</span>
+        </p>
+      </article>
+    </section>
+
+    <section
+      class="container text-center p-4 d-flex flex-column align-items-center justify-content-evenly blue__section"
+    >
+      <div class="text-center mx-auto mb-3 w-75">
+        <h5 class="oferta__tag text-white py-1 px-2">OFERTA ÚNICA</h5>
+        <h1 class="text-white">Você não verá preço menor em outro lugar</h1>
+      </div>
+
+      <div class="cards__container d-flex flex mt-5">
+        <div class="card shadow p-4 card__buy d-flex flex-column align-content-evenly">
+          <h4 class="card-header text-white py-2">ESCOLHA SEU PACOTE</h4>
+          <div class="card-body">
+            <div class="button__group container d-flex justify-content-between align-content-between gap-2 text-center">
+              <button class="btn btn__caixas">
+                1<br />
+                CAIXA
+              </button>
+              <button class="btn btn__caixas">3 CAIXAS</button>
+              <button class="btn btn__caixas">6 CAIXAS</button>
+            </div>
+            <div class="price__container my-4">
+              <p><strong>R$148,60 por caixa</strong><br /><span>Economize R$136,20</span></p>
+              <p>
+                <strong>HOJE:</strong> <small>12x</small> <strong>R$49,99</strong><br /><span
+                  >ou R$ 445,80 à vista</span
+                >
+              </p>
+            </div>
+            <button
+              type="button"
+              onclick="btnComprarClicked()"
+              class="btn text-white rounded-pill btn__comprar px-5 py-2"
+            >
+              Comprar Agora
+            </button>
+          </div>
+        </div>
+        <div class="card p-4 shadow card__subscribe">
+          <img
+            loading="lazy"
+            class="discount__badge"
+            src="./assets/badge.png"
+            alt="Etiqueta laranja escrito 'Ganhe 10% de Desconto!' em branco."
+          />
+          <h4 class="card-header text-white py-2">
+            ASSINE E ECONOMIZE <br />
+            (OPCIONAL)
+          </h4>
+          <div class="card-body">
+            <ul class="text-start">
+              <li>Desconto Máximo Aplicado</li>
+              <li>Entrega Automática em sua Casa</li>
+              <li>Menor Preço Garantido / Sem Reajustes</li>
+              <li>Cancele quando quiser / Sem Taxas</li>
+            </ul>
+          </div>
+          <div class="rounded pt-2 d-flex justify-content-center align-items-center" id="checkbox__container">
+            <p>
+              <img loading="lazy" id="checkbox" src="./assets/check-icon-mobile.png" alt="checkbox" />
+              <strong>SIM!</strong> Eu quero ser assinante e ganhar <br />
+              DESCONTO!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container d-flex flex-column text-center p-4 justify-content-evenly align-content-around align-items-center mb-5"
+    >
+      <div>
+        <h1>
+          Se não notar resultados, sua<br />
+          compra sai de graça
+        </h1>
+        <h3 class="mb-5">Sem perguntas, sem pegadinhas...</h3>
+      </div>
+      <div
+        class="container text-start p-3 d-flex justify-content-center align-items-center guarantee__container shadow"
+      >
+        <img
+          loading="lazy"
+          class="m-4"
+          id="guarantee__badge"
+          src="./assets/selo-garantia.png"
+          alt="Selo de garantia de 30 dias"
+        />
+
+        <div class="w-75 guarantee__text">
+          <p>
+            Ao fazer o pedido de Active Anti Ox,
+            <span class="text__highligth"> você está coberto pela nossa garantia de satisfação.</span>
+            Esta é uma política que adotamos, e cumprimos à risca, que visa proteger nossos consumidores, para que eles
+            possam experimentar fórmulas <span class="text__highligth">livre de riscos.</span>
+          </p>
+          <p>
+            Se após <span class="text__highligth">30 dias</span> você não estiver completamente satisfeito/a,
+            <span class="text__highligth">devolveremos seu dinheiro em forma de crédito,</span>
+            para usar em qualquer produto da Doutor Nature - sem perguntas, sem burocracia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container text-center d-flex flex-column justify-content-evenly align-items-center">
+      <div class="mb-5">
+        <h1>Veja alguns dos resultados do Active Anti Ox*</h1>
+        <h3>Experimente e comece a hidratar sua pele de verdade</h3>
+      </div>
+      <div class="container w-75 mb-3">
+        <div class="row">
+          <img
+            loading="lazy"
+            class="col-6"
+            src="assets/image7.jpg"
+            alt="Antes e depois - Dalva - São Paulo/SP"
+            title="Antes e depois - Dalva - São Paulo/SP"
+          />
+          <img
+            loading="lazy"
+            class="col-6"
+            src="assets/image8.jpg"
+            alt="Antes e depois - Magda - Santos/SP"
+            title="Antes e depois - Magda - Santos/SP"
+          />
+        </div>
+        <div class="row">
+          <img
+            loading="lazy"
+            class="col-6"
+            src="assets/image9.jpg"
+            alt="Antes e depois - Marta - Curitiba/PR"
+            title="Antes e depois - Marta - Curitiba/PR"
+          />
+          <img
+            loading="lazy"
+            class="col-6"
+            src="assets/image10.jpg"
+            alt="Antes e depois - Maria Ceclília Niterói/RJ"
+            title="Antes e depois - Maria Ceclília Niterói/RJ"
+          />
+        </div>
+      </div>
+      <div class="small-info__container text-center d-flex align-items-center justify-content-center">
+        <p class="text-start">
+          <small
+            >*Somos honestos e transparentes com nossos clientes, os resultados podem variar de pessoa para pessoa, cada
+            organismo é único e<br />
+            vai reagir aos compostos de forma diferente. Aproveite a nossa garantia incondicional, compre e avalie você
+            mesmo os resultados.<br />
+            Esta fórmula foi desenvolvida por médico e sua equipe de pesquisadores.</small
+          >
+        </p>
+      </div>
+    </section>
+    <section class="container blue__section text-center my-3">
+      <h1 class="text-white">Tire suas dúvidas</h1>
+    </section>
+    <section class="container text-center d-flex flex-column mb-5">
+      <div class="mb-5">
+        <h1>
+          O melhor suplemento para hidratar<br />
+          sua pele
+        </h1>
+        <h3>hidratação de verdade</h3>
+      </div>
+
+      <div class="container d-flex justify-content-center align-items-center text-start">
+        <div class="effects">
+          <p class="mb-4">
+            Os ingredientes poderosos do Active Anti Ox trabalham<br />
+            juntos para:
+          </p>
+          <ul class="d-flex flex-column text-start">
+            <li>Devolver a firmeza na pele crepe</li>
+            <li>Preencher as rugas e rachaduras da superfície da pele</li>
+            <li>Reduzir linhas finas do rosto, pescoço e colo</li>
+            <li>Restabelecer o brilho natural da pele</li>
+            <li>Hidratando a pele, de dentro para fora</li>
+          </ul>
+        </div>
+        <img
+          loading="lazy"
+          src="./assets/image11.jpg"
+          alt="Caixa contendo cartelas de Active Anti Ox, estando uma das cartelas fora da caixa"
+          title="Caixa contendo cartelas de Active Anti Ox, estando uma das cartelas fora da caixa"
+          id="box__img"
+        />
+      </div>
+    </section>
+
+    <section class="container text-center p-4 d-flex flex-column align-items-center justify-content-evenly">
+      <div class="cards__container d-flex flex mt-5">
+        <div class="card shadow p-4 card__buy d-flex flex-column align-content-evenly">
+          <h4 class="card-header text-white py-2">ESCOLHA SEU PACOTE</h4>
+          <div class="card-body">
+            <div class="button__group container d-flex justify-content-between align-content-between gap-2 text-center">
+              <button class="btn btn__caixas">
+                1<br />
+                CAIXA
+              </button>
+              <button class="btn btn__caixas">3 CAIXAS</button>
+              <button class="btn btn__caixas">6 CAIXAS</button>
+            </div>
+            <div class="price__container my-4">
+              <p><strong>R$148,60 por caixa</strong><br /><span>Economize R$136,20</span></p>
+              <p>
+                <strong>HOJE:</strong> <small>12x</small> <strong>R$49,99</strong><br /><span
+                  >ou R$ 445,80 à vista</span
+                >
+              </p>
+            </div>
+            <button
+              type="button"
+              onclick="btnComprarClicked()"
+              class="btn text-white rounded-pill btn__comprar px-5 py-2"
+            >
+              Comprar Agora
+            </button>
+          </div>
+        </div>
+        <div class="card p-4 shadow card__subscribe">
+          <img
+            loading="lazy"
+            class="discount__badge"
+            src="./assets/badge.png"
+            alt="Etiqueta laranja escrito 'Ganhe 10% de Desconto!' em branco."
+          />
+          <h4 class="card-header text-white py-2">
+            ASSINE E ECONOMIZE <br />
+            (OPCIONAL)
+          </h4>
+          <div class="card-body">
+            <ul class="text-start">
+              <li>Desconto Máximo Aplicado</li>
+              <li>Entrega Automática em sua Casa</li>
+              <li>Menor Preço Garantido / Sem Reajustes</li>
+              <li>Cancele quando quiser / Sem Taxas</li>
+            </ul>
+          </div>
+          <div class="rounded pt-2 d-flex justify-content-center align-items-center" id="checkbox__container">
+            <p>
+              <img loading="lazy" id="checkbox2" src="./assets/check-icon-mobile.png" alt="checkbox" />
+              <strong>SIM!</strong> Eu quero ser assinante e ganhar <br />
+              DESCONTO!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 w-100">
+      <div class="w-75 mx-auto">
+        <div>
+          <p>
+            <small
+              >Este produto não se destina a dignosticar, tratar, curar ou prevenir qualquer doença, os resultados podem
+              variar de pessoa para pessoa, esses depoimentos podem ser fícticios, esta informação não constitui
+              aconselhamento médico e não deve ser considerada como tal, consulte o seu médico antes de modificar o seu
+              regime médico regular. Este é um advertorial e não um artigo de notícia ou blog. Produto dispensado da
+              obrigatoriedade de registro conforme RDC 27/2010</small
+            >
+          </p>
+        </div>
+        <div class="d-flex text-center justify-content-between">
+          <a href="#"
+            ><img loading="lazy" src="./assets/logo_footer-DoutorNature.svg" alt="Logo Doutor Nature" class="w-50 m-2"
+          /></a>
+          <p class="text-start mx-5">
+            <small
+              >&copy; 2022 Doutor Nature - Todos os Direitos Reservados - Política de Privacidade | Termos de Uso</small
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

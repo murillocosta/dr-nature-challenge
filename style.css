@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'Effra Bold';
+  src: url('assets/fonts/Effra_Std_Bd.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+:root {
+  --red: #ff594e;
+  --gray: #484b57;
+  --grayish-blue: #3b4157;
+  --light-gray: #f5f5f5;
+  --green: #1fab36;
+  --dark-gray: #616060;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background-color: var(--light-gray);
+  z-index: 300;
+}
+
+section {
+  max-width: 1600px;
+}
+
+.section {
+  min-height: calc(100vh - 0.5rem);
+}
+
+.landing__section {
+  background-image: url('./assets/background-desktop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: var(--gray);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  background-color: var(--green);
+  font-size: 1.2rem;
+}
+
+h3 {
+  color: var(--red);
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+}
+
+#arrow {
+  cursor: pointer;
+}
+
+article {
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+.text__highligth {
+  color: var(--grayish-blue);
+  font-weight: bold;
+}
+
+.dr_rafael__section {
+  background-image: url('./assets/doutor-rafael.png');
+  background-repeat: no-repeat;
+  background-size: 35% 85%;
+  background-position: 47rem 12rem;
+}
+
+.blue__section {
+  background-color: var(--grayish-blue);
+}
+
+.oferta__tag {
+  background-image: url(assets/mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-weight: bold;
+  font-family: 'Effra Bold';
+}
+
+.card {
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.card-header {
+  border-radius: 5px !important;
+}
+
+.card-header {
+  background-color: var(--dark-gray);
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.card-body ul {
+  list-style-image: url('./assets/check-icon.png');
+}
+
+.card-body ul li {
+  font-weight: lighter;
+  color: rgb(159, 159, 159);
+  margin-left: 1rem;
+}
+
+.btn__caixas {
+  background-color: #e8e4e4;
+  height: 4.5rem;
+  width: 5.5rem;
+}
+
+.btn__comprar {
+  background-color: var(--red);
+  width: 95%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.price__container {
+  color: var(--gray);
+  line-height: 1;
+
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.price__container span {
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+.price__container small {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.discount__badge {
+  max-height: 4rem;
+  max-width: 4rem;
+  position: absolute;
+  top: -2.7rem;
+  right: -0.2rem;
+}
+
+.card__subscribe {
+  position: relative;
+  height: 80%;
+}
+
+#checkbox__container {
+  background-color: #ddd;
+  color: var(--grayish-blue);
+}
+
+#checkbox__container img {
+  cursor: pointer;
+}
+
+#guarantee__badge {
+  width: 8rem;
+  height: 8rem;
+}
+
+.guarantee__container {
+  width: 74%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.guarantee__text {
+  background-color: white;
+}
+
+.guarantee__text p {
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.small-info__container {
+  font-size: 0.875rem;
+
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+#box__img {
+  width: 25rem;
+  height: 20rem;
+}
+
+.effects {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.effects ul {
+  list-style: none;
+}
+
+.effects ul li::before {
+  content: '\2022';
+  color: #1fab36;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer {
+  background-color: var(--light-gray);
+  font-size: 0.765rem;
+  color: var(--gray);
+  font-weight: lighter;
+}
