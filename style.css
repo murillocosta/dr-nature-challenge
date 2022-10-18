@@ -48,7 +48,12 @@ h1 {
 h2 {
   color: white;
   background-color: var(--green);
+  background-size: contain;
   font-size: 1.2rem;
+  font-weight: normal;
+  font-family: 'Roboto Slab', serif;
+  display: inline-block;
+  padding: 0 .5rem
 }
 
 h3 {
@@ -201,6 +206,36 @@ article {
 #box__img {
   width: 25rem;
   height: 20rem;
+}
+
+.accorddion {
+  width: 12rem;
+  height: 12rem;
+}
+
+.accordion_header {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.accordion_header div {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.accordion_header p {
+  color: white;
+}
+
+.accordion_content {
+  color: white;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.8s ease;
+  text-align: justify;
+}
+
+.active {
+  padding-bottom: 0.8rem;
 }
 
 .effects {
