@@ -17,6 +17,7 @@
 
 body {
   background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -53,7 +54,7 @@ h2 {
   font-weight: normal;
   font-family: 'Roboto Slab', serif;
   display: inline-block;
-  padding: 0 .5rem
+  padding: 0 0.5rem;
 }
 
 h3 {
@@ -120,10 +121,33 @@ article {
   margin-left: 1rem;
 }
 
+.card__buy {
+  margin-right: -1rem;
+  z-index: 100;
+  height: 25em;
+  position: relative;
+  top: -1rem;
+}
+
 .btn__caixas {
   background-color: #e8e4e4;
   height: 4.5rem;
   width: 5.5rem;
+  color: #bbb;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn__caixas span {
+  font-size: 2rem;
+}
+
+.btn__caixas:hover {
+  color: #bbb;
 }
 
 .btn__comprar {
@@ -131,6 +155,16 @@ article {
   width: 95%;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.selected {
+  background-color: #1fab36;
+  color: white;
+}
+
+.aprazo,
+.avista {
+  color: var(--gray) !important;
 }
 
 .price__container {
@@ -158,8 +192,8 @@ article {
   max-height: 4rem;
   max-width: 4rem;
   position: absolute;
-  top: -2.7rem;
-  right: -0.2rem;
+  top: -2.6rem;
+  right: -0.26rem;
 }
 
 .card__subscribe {

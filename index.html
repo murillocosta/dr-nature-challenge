@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Doutor Nature</title>
+    <title>Doutor Nature - Challenge</title>
   </head>
   <body>
     <header class="shadow position-fixed w-100">
@@ -118,18 +118,35 @@
           <h4 class="card-header text-white py-2">ESCOLHA SEU PACOTE</h4>
           <div class="card-body">
             <div class="button__group container d-flex justify-content-between align-content-between gap-2 text-center">
-              <button class="btn btn__caixas">
-                1<br />
+              <button
+                onclick="setSelected(1)"
+                class="btn btn__caixas d-flex flex-column justify-content-center align-items-center box1"
+              >
+                <span>1</span>
                 CAIXA
               </button>
-              <button class="btn btn__caixas">3 CAIXAS</button>
-              <button class="btn btn__caixas">6 CAIXAS</button>
+              <button
+                onclick="setSelected(3)"
+                class="btn btn__caixas d-flex flex-column justify-content-center align-items-center selected box3"
+              >
+                <span>3</span> CAIXAS
+              </button>
+              <button
+                onclick="setSelected(6)"
+                class="btn btn__caixas d-flex flex-column justify-content-center align-items-center box6"
+              >
+                <span>6</span> CAIXAS
+              </button>
             </div>
             <div class="price__container my-4">
-              <p><strong>R$148,60 por caixa</strong><br /><span>Economize R$136,20</span></p>
               <p>
-                <strong>HOJE:</strong> <small>12x</small> <strong>R$49,99</strong><br /><span
-                  >ou R$ 445,80 à vista</span
+                <strong class="avista">R$148,60 por caixa</strong><br /><span class="avista__economize"
+                  >Economize R$136,20</span
+                >
+              </p>
+              <p>
+                <strong>HOJE:</strong> <small>12x</small> <strong class="aprazo">R$49,99</strong><br /><span
+                  >ou <span class="aprazo__economize">R$445,80 à vista</span></span
                 >
               </p>
             </div>
@@ -154,7 +171,7 @@
             (OPCIONAL)
           </h4>
           <div class="card-body">
-            <ul class="text-start">
+            <ul class="text-start d-flex flex-column justify-content-center align-content-center">
               <li>Desconto Máximo Aplicado</li>
               <li>Entrega Automática em sua Casa</li>
               <li>Menor Preço Garantido / Sem Reajustes</li>
@@ -262,94 +279,6 @@
     <section class="container blue__section text-center my-3 p-5">
       <h1 class="text-white mb-5">Tire suas dúvidas</h1>
 
-      <!-- <div class="accordion d-flex flex-column w-50 justify-content-center align-items-center mx-auto">
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Do que é feito o Active Anti-Ox?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Como devo usar o Active Anti-OX?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Active Anti-Ox tem contra-indicação?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Precisa de prescrição médica para comprar?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>E se Active Anti-Ox não funcionar para mim?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Quando posso perceber os resultados?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Além do Vital 4k o que mais vou receber na minha compra?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__header gap-3 d-flex justify-content-start">
-            <div class="icon">+</div>
-            <p>Vocês tem garantia de satisfação?</p>
-          </div>
-          <div class="accordion__content text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugiat, magni saepe quo beatae, eos
-            magnam et quas praesentium quae tempora reiciendis sunt eveniet a eaque vel voluptates sint commodi.
-          </div>
-        </div>
-      </div> -->
-
       <div class="accordion d-flex flex-column w-50 justify-content-center align-items-center mx-auto">
         <div class="accordion_item">
           <div class="accordion_header gap-3 d-flex justify-content-start">
@@ -452,7 +381,7 @@
             </div>
 
             <div class="accordion_item">
-              <div class="accordion_header gap-3 d-flex justify-content-start">
+              <div class="accordion_header gap-3 d-flex justify-content-start text-start">
                 <div class="icon">+</div>
                 <p>Além do Vital 4k o que mais vou receber na minha compra?</p>
               </div>
@@ -527,18 +456,35 @@
           <h4 class="card-header text-white py-2">ESCOLHA SEU PACOTE</h4>
           <div class="card-body">
             <div class="button__group container d-flex justify-content-between align-content-between gap-2 text-center">
-              <button class="btn btn__caixas">
-                1<br />
+              <button
+                onclick="setSelected(1)"
+                class="btn btn__caixas d-flex flex-column justify-content-center align-items-center box1"
+              >
+                <span>1</span>
                 CAIXA
               </button>
-              <button class="btn btn__caixas">3 CAIXAS</button>
-              <button class="btn btn__caixas">6 CAIXAS</button>
+              <button
+                onclick="setSelected(3)"
+                class="btn btn__caixas d-flex flex-column justify-content-center align-items-center selected box3"
+              >
+                <span>3</span> CAIXAS
+              </button>
+              <button
+                onclick="setSelected(6)"
+                class="btn btn__caixas d-flex flex-column justify-content-center align-items-center box6"
+              >
+                <span>6</span> CAIXAS
+              </button>
             </div>
             <div class="price__container my-4">
-              <p><strong>R$148,60 por caixa</strong><br /><span>Economize R$136,20</span></p>
               <p>
-                <strong>HOJE:</strong> <small>12x</small> <strong>R$49,99</strong><br /><span
-                  >ou R$ 445,80 à vista</span
+                <strong class="avista">R$148,60 por caixa</strong><br /><span class="avista__economize"
+                  >Economize R$136,20</span
+                >
+              </p>
+              <p>
+                <strong>HOJE:</strong> <small>12x</small> <strong class="aprazo">R$49,99</strong><br /><span
+                  >ou <span class="aprazo__economize">R$445,80 à vista</span></span
                 >
               </p>
             </div>
