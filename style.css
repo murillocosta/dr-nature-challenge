@@ -96,7 +96,8 @@ article {
 .dr-rafael__img {
   max-width: 40%;
   max-height: 50%;
-  margin-bottom: -1.5rem;
+  position: relative;
+  bottom: -2.5rem;
   margin-left: -13rem;
 }
 
