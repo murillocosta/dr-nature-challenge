@@ -25,9 +25,9 @@ header {
   z-index: 300;
 }
 
-/* section {
-  max-width: 1600px;
-} */
+section {
+  max-width: 2000px;
+}
 
 .section {
   /* min-height: calc(100vh - 0.5rem); */
@@ -313,4 +313,12 @@ footer {
   font-size: 0.765rem;
   color: var(--gray);
   font-weight: lighter;
+}
+
+@media (max-width: 1400px) {
+  .dr-rafael__img {
+    
+    bottom: 0rem;
+    right: 0.5rem;
+  }
 }
