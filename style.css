@@ -90,6 +90,7 @@ article {
 .dr_rafael__section {
   margin-top: 5.5rem;
   position: relative;
+  max-height: 60rem;
 }
 
 .dr-rafael__img {
