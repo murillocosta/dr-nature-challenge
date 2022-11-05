@@ -25,19 +25,20 @@ header {
   z-index: 300;
 }
 
-section {
+/* section {
   max-width: 1600px;
-}
+} */
 
 .section {
-  min-height: calc(100vh - 0.5rem);
+  /* min-height: calc(100vh - 0.5rem); */
+  height: 100vh;
 }
 
 .landing_img {
   position: absolute;
   z-index: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .landing_content {
@@ -74,6 +75,8 @@ h3 {
   cursor: pointer;
   z-index: 50;
   margin-bottom: 1rem;
+  position: relative;
+  bottom: -10rem;
 }
 
 article {
@@ -86,19 +89,17 @@ article {
   font-weight: bold;
 }
 
-/* .dr_rafael__section {
-  background-image: url("./assets/doutor-rafael.png");
-  background-repeat: no-repeat;
-  background-size: 35% 85%;
-  background-position: 47rem 12rem;
-} */
+.dr_rafael__section {
+  margin-top: 5.5rem;
+  position: relative;
+}
 
 .dr-rafael__img {
-  max-width: 40%;
-  max-height: 50%;
-  position: relative;
-  bottom: -2.5rem;
-  margin-left: -13rem;
+  max-width: 30rem;
+  max-height: 40rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 5rem;
 }
 
 .blue__section {
