@@ -86,11 +86,17 @@ article {
   font-weight: bold;
 }
 
-.dr_rafael__section {
+/* .dr_rafael__section {
   background-image: url("./assets/doutor-rafael.png");
   background-repeat: no-repeat;
   background-size: 35% 85%;
   background-position: 47rem 12rem;
+} */
+
+.dr-rafael__img {
+  max-width: 40%;
+  max-height: 40%;
+  margin-bottom: -1.5rem;
 }
 
 .blue__section {
