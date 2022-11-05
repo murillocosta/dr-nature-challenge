@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Effra Bold';
-  src: url('assets/fonts/Effra_Std_Bd.ttf') format('truetype');
+  font-family: "Effra Bold";
+  src: url("assets/fonts/Effra_Std_Bd.ttf") format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
 :root {
   --red: #ff594e;
@@ -17,7 +17,7 @@
 
 body {
   background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -33,15 +33,22 @@ section {
   min-height: calc(100vh - 0.5rem);
 }
 
-.landing__section {
-  background-image: url('./assets/background-desktop.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.landing_img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.landing_content {
+  position: relative;
+  z-index: 50;
+  margin-top: 5rem;
 }
 
 h1 {
   color: var(--gray);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -52,19 +59,21 @@ h2 {
   background-size: contain;
   font-size: 1.2rem;
   font-weight: normal;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   display: inline-block;
   padding: 0 0.5rem;
 }
 
 h3 {
   color: var(--red);
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
 }
 
 #arrow {
   cursor: pointer;
+  z-index: 50;
+  margin-bottom: 1rem;
 }
 
 article {
@@ -78,7 +87,7 @@ article {
 }
 
 .dr_rafael__section {
-  background-image: url('./assets/doutor-rafael.png');
+  background-image: url("./assets/doutor-rafael.png");
   background-repeat: no-repeat;
   background-size: 35% 85%;
   background-position: 47rem 12rem;
@@ -94,12 +103,12 @@ article {
   background-position: center;
   background-size: contain;
   font-weight: bold;
-  font-family: 'Effra Bold';
+  font-family: "Effra Bold";
 }
 
 .card {
   border-radius: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .card-header {
   border-radius: 5px !important;
@@ -112,7 +121,7 @@ article {
 }
 
 .card-body ul {
-  list-style-image: url('./assets/check-icon.png');
+  list-style-image: url("./assets/check-icon.png");
 }
 
 .card-body ul li {
@@ -172,14 +181,14 @@ article {
   line-height: 1;
 
   font-size: 1.1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .price__container span {
   color: var(--green);
   font-size: 1rem;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
 }
 .price__container small {
@@ -283,7 +292,7 @@ article {
 }
 
 .effects ul li::before {
-  content: '\2022';
+  content: "\2022";
   color: #1fab36;
   font-weight: bold;
   display: inline-block;

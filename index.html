@@ -18,14 +18,27 @@
       <nav class="navbar navbar-light">
         <div class="mx-auto">
           <a class="navbar-brand" href="#">
-            <img loading="lazy" src="assets/logo_Doutor-Nature.svg" alt="Logo Doutor Nature" width="150" height="50" />
+            <img
+              loading="lazy"
+              src="assets/logo_Doutor-Nature.svg"
+              alt="Logo Doutor Nature"
+              width="150"
+              height="50"
+            />
           </a>
         </div>
       </nav>
     </header>
 
-    <section class="d-flex flex-column justify-content-between align-items-center text-center section landing__section">
-      <div class="my-5">
+    <section
+      class="mx-auto d-flex flex-column justify-content-between align-items-center text-center section landing__section h-100"
+    >
+      <img
+        class="landing_img"
+        src="./assets/background-desktop.png"
+        alt="Imagem de background"
+      />
+      <div class="landing_content" >
         <h1 class="my-5">
           O jeito certo de hidratar a pele<br />
           tipo "crepe"
@@ -33,7 +46,7 @@
         <h2>E por que a indústria de cosméticos nunca falou sobre isso...</h2>
       </div>
 
-      <div>
+      <div class="landing_content">
         <iframe
           width="560"
           height="315"
@@ -63,7 +76,7 @@
     </section>
 
     <section
-      class="container section text-center p-4 d-flex flex-column align-items-center justify-content-evenly dr_rafael__section"
+      class="container mx-auto section text-center p-4 d-flex flex-column align-items-center justify-content-evenly dr_rafael__section"
       id="dr_rafael__section"
     >
       <div class="text-center">
@@ -95,11 +108,15 @@
           >, pois sua pele não vai reter a hidratação.
         </p>
         <p class="text-start mb-4">
-          Já quando você ingere alguns compostos específicos, e passa a hidratar sua pele<br />
+          Já quando você ingere alguns compostos específicos, e passa a hidratar
+          sua pele<br />
           de dentro para fora,
-          <span class="text__highligth">aí o jogo vira a seu favor. Active Anti Ox</span>
+          <span class="text__highligth"
+            >aí o jogo vira a seu favor. Active Anti Ox</span
+          >
           é uma fórmula que<br />
-          desenvolvi junto de minha equipe, para ajudar a hidratar e recuperar sua pele,<br />
+          desenvolvi junto de minha equipe, para ajudar a hidratar e recuperar
+          sua pele,<br />
           <span class="text__highligth">agindo de dentro para fora.</span>
         </p>
       </article>
@@ -114,10 +131,14 @@
       </div>
 
       <div class="cards__container d-flex flex mt-5">
-        <div class="card shadow p-4 card__buy d-flex flex-column align-content-evenly">
+        <div
+          class="card shadow p-4 card__buy d-flex flex-column align-content-evenly"
+        >
           <h4 class="card-header text-white py-2">ESCOLHA SEU PACOTE</h4>
           <div class="card-body">
-            <div class="button__group container d-flex justify-content-between align-content-between gap-2 text-center">
+            <div
+              class="button__group container d-flex justify-content-between align-content-between gap-2 text-center"
+            >
               <button
                 onclick="setSelected(1)"
                 class="btn btn__caixas d-flex flex-column justify-content-center align-items-center box1"
@@ -140,13 +161,16 @@
             </div>
             <div class="price__container my-4">
               <p>
-                <strong class="avista">R$148,60 por caixa</strong><br /><span class="avista__economize"
+                <strong class="avista">R$148,60 por caixa</strong><br /><span
+                  class="avista__economize"
                   >Economize R$136,20</span
                 >
               </p>
               <p>
-                <strong>HOJE:</strong> <small>12x</small> <strong class="aprazo">R$49,99</strong><br /><span
-                  >ou <span class="aprazo__economize">R$445,80 à vista</span></span
+                <strong>HOJE:</strong> <small>12x</small>
+                <strong class="aprazo">R$49,99</strong><br /><span
+                  >ou
+                  <span class="aprazo__economize">R$445,80 à vista</span></span
                 >
               </p>
             </div>
@@ -171,16 +195,26 @@
             (OPCIONAL)
           </h4>
           <div class="card-body">
-            <ul class="text-start d-flex flex-column justify-content-center align-content-center">
+            <ul
+              class="text-start d-flex flex-column justify-content-center align-content-center"
+            >
               <li>Desconto Máximo Aplicado</li>
               <li>Entrega Automática em sua Casa</li>
               <li>Menor Preço Garantido / Sem Reajustes</li>
               <li>Cancele quando quiser / Sem Taxas</li>
             </ul>
           </div>
-          <div class="rounded pt-2 d-flex justify-content-center align-items-center" id="checkbox__container">
+          <div
+            class="rounded pt-2 d-flex justify-content-center align-items-center"
+            id="checkbox__container"
+          >
             <p>
-              <img loading="lazy" id="checkbox" src="./assets/check-icon-mobile.png" alt="checkbox" />
+              <img
+                loading="lazy"
+                id="checkbox"
+                src="./assets/check-icon-mobile.png"
+                alt="checkbox"
+              />
               <strong>SIM!</strong> Eu quero ser assinante e ganhar <br />
               DESCONTO!
             </p>
@@ -189,7 +223,7 @@
       </div>
     </section>
     <section
-      class="container d-flex flex-column text-center p-4 justify-content-evenly align-content-around align-items-center mb-5"
+      class="container d-flex flex-column text-center p-4 justify-content-evenly align-content-around align-items-center mb-5 mt-5"
     >
       <div>
         <h1>
@@ -212,20 +246,29 @@
         <div class="w-75 guarantee__text">
           <p>
             Ao fazer o pedido de Active Anti Ox,
-            <span class="text__highligth"> você está coberto pela nossa garantia de satisfação.</span>
-            Esta é uma política que adotamos, e cumprimos à risca, que visa proteger nossos consumidores, para que eles
-            possam experimentar fórmulas <span class="text__highligth">livre de riscos.</span>
+            <span class="text__highligth">
+              você está coberto pela nossa garantia de satisfação.</span
+            >
+            Esta é uma política que adotamos, e cumprimos à risca, que visa
+            proteger nossos consumidores, para que eles possam experimentar
+            fórmulas <span class="text__highligth">livre de riscos.</span>
           </p>
           <p>
-            Se após <span class="text__highligth">30 dias</span> você não estiver completamente satisfeito/a,
-            <span class="text__highligth">devolveremos seu dinheiro em forma de crédito,</span>
-            para usar em qualquer produto da Doutor Nature - sem perguntas, sem burocracia.
+            Se após <span class="text__highligth">30 dias</span> você não
+            estiver completamente satisfeito/a,
+            <span class="text__highligth"
+              >devolveremos seu dinheiro em forma de crédito,</span
+            >
+            para usar em qualquer produto da Doutor Nature - sem perguntas, sem
+            burocracia.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="container text-center d-flex flex-column justify-content-evenly align-items-center">
+    <section
+      class="container text-center d-flex flex-column justify-content-evenly align-items-center"
+    >
       <div class="mb-5">
         <h1>Veja alguns dos resultados do Active Anti Ox*</h1>
         <h3>Experimente e comece a hidratar sua pele de verdade</h3>
@@ -264,14 +307,17 @@
           />
         </div>
       </div>
-      <div class="small-info__container text-center d-flex align-items-center justify-content-center">
+      <div
+        class="small-info__container text-center d-flex align-items-center justify-content-center"
+      >
         <p class="text-start">
           <small
-            >*Somos honestos e transparentes com nossos clientes, os resultados podem variar de pessoa para pessoa, cada
-            organismo é único e<br />
-            vai reagir aos compostos de forma diferente. Aproveite a nossa garantia incondicional, compre e avalie você
-            mesmo os resultados.<br />
-            Esta fórmula foi desenvolvida por médico e sua equipe de pesquisadores.</small
+            >*Somos honestos e transparentes com nossos clientes, os resultados
+            podem variar de pessoa para pessoa, cada organismo é único e<br />
+            vai reagir aos compostos de forma diferente. Aproveite a nossa
+            garantia incondicional, compre e avalie você mesmo os resultados.<br />
+            Esta fórmula foi desenvolvida por médico e sua equipe de
+            pesquisadores.</small
           >
         </p>
       </div>
@@ -279,7 +325,9 @@
     <section class="container blue__section text-center my-3 p-5">
       <h1 class="text-white mb-5">Tire suas dúvidas</h1>
 
-      <div class="accordion d-flex flex-column w-50 justify-content-center align-items-center mx-auto">
+      <div
+        class="accordion d-flex flex-column w-50 justify-content-center align-items-center mx-auto"
+      >
         <div class="accordion_item">
           <div class="accordion_header gap-3 d-flex justify-content-start">
             <div class="icon">+</div>
@@ -289,9 +337,10 @@
           <div class="accordion_content p-1">
             <div class="p-3">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                dolorem eaque, fuga ut corporis mollitia laboriosam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                possimus reprehenderit accusantium libero quae reiciendis hic
+                delectus, perferendis excepturi ipsam placeat necessitatibus
+                blanditiis dolorem eaque, fuga ut corporis mollitia laboriosam.
               </p>
             </div>
           </div>
@@ -306,9 +355,10 @@
           <div class="accordion_content p-1">
             <div class="p-3">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                dolorem eaque, fuga ut corporis mollitia laboriosam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                possimus reprehenderit accusantium libero quae reiciendis hic
+                delectus, perferendis excepturi ipsam placeat necessitatibus
+                blanditiis dolorem eaque, fuga ut corporis mollitia laboriosam.
               </p>
             </div>
           </div>
@@ -323,9 +373,10 @@
           <div class="accordion_content p-1">
             <div class="p-3">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                dolorem eaque, fuga ut corporis mollitia laboriosam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                possimus reprehenderit accusantium libero quae reiciendis hic
+                delectus, perferendis excepturi ipsam placeat necessitatibus
+                blanditiis dolorem eaque, fuga ut corporis mollitia laboriosam.
               </p>
             </div>
           </div>
@@ -340,9 +391,10 @@
           <div class="accordion_content p-1">
             <div class="p-3">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                dolorem eaque, fuga ut corporis mollitia laboriosam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                possimus reprehenderit accusantium libero quae reiciendis hic
+                delectus, perferendis excepturi ipsam placeat necessitatibus
+                blanditiis dolorem eaque, fuga ut corporis mollitia laboriosam.
               </p>
             </div>
           </div>
@@ -356,9 +408,11 @@
             <div class="accordion_content p-1">
               <div class="p-3">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                  libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                  dolorem eaque, fuga ut corporis mollitia laboriosam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora possimus reprehenderit accusantium libero quae
+                  reiciendis hic delectus, perferendis excepturi ipsam placeat
+                  necessitatibus blanditiis dolorem eaque, fuga ut corporis
+                  mollitia laboriosam.
                 </p>
               </div>
             </div>
@@ -373,15 +427,19 @@
             <div class="accordion_content p-1">
               <div class="p-3">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                  libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                  dolorem eaque, fuga ut corporis mollitia laboriosam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora possimus reprehenderit accusantium libero quae
+                  reiciendis hic delectus, perferendis excepturi ipsam placeat
+                  necessitatibus blanditiis dolorem eaque, fuga ut corporis
+                  mollitia laboriosam.
                 </p>
               </div>
             </div>
 
             <div class="accordion_item">
-              <div class="accordion_header gap-3 d-flex justify-content-start text-start">
+              <div
+                class="accordion_header gap-3 d-flex justify-content-start text-start"
+              >
                 <div class="icon">+</div>
                 <p>Além do Vital 4k o que mais vou receber na minha compra?</p>
               </div>
@@ -389,9 +447,11 @@
               <div class="accordion_content p-1">
                 <div class="p-3">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                    libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                    dolorem eaque, fuga ut corporis mollitia laboriosam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempora possimus reprehenderit accusantium libero quae
+                    reiciendis hic delectus, perferendis excepturi ipsam placeat
+                    necessitatibus blanditiis dolorem eaque, fuga ut corporis
+                    mollitia laboriosam.
                   </p>
                 </div>
               </div>
@@ -406,9 +466,11 @@
               <div class="accordion_content p-1">
                 <div class="p-3">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus reprehenderit accusantium
-                    libero quae reiciendis hic delectus, perferendis excepturi ipsam placeat necessitatibus blanditiis
-                    dolorem eaque, fuga ut corporis mollitia laboriosam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempora possimus reprehenderit accusantium libero quae
+                    reiciendis hic delectus, perferendis excepturi ipsam placeat
+                    necessitatibus blanditiis dolorem eaque, fuga ut corporis
+                    mollitia laboriosam.
                   </p>
                 </div>
               </div>
@@ -426,7 +488,9 @@
         <h3>hidratação de verdade</h3>
       </div>
 
-      <div class="container d-flex justify-content-center align-items-center text-start">
+      <div
+        class="container d-flex justify-content-center align-items-center text-start"
+      >
         <div class="effects">
           <p class="mb-4">
             Os ingredientes poderosos do Active Anti Ox trabalham<br />
@@ -450,12 +514,18 @@
       </div>
     </section>
 
-    <section class="container text-center p-4 d-flex flex-column align-items-center justify-content-evenly">
+    <section
+      class="container text-center p-4 d-flex flex-column align-items-center justify-content-evenly"
+    >
       <div class="cards__container d-flex flex mt-5">
-        <div class="card shadow p-4 card__buy d-flex flex-column align-content-evenly">
+        <div
+          class="card shadow p-4 card__buy d-flex flex-column align-content-evenly"
+        >
           <h4 class="card-header text-white py-2">ESCOLHA SEU PACOTE</h4>
           <div class="card-body">
-            <div class="button__group container d-flex justify-content-between align-content-between gap-2 text-center">
+            <div
+              class="button__group container d-flex justify-content-between align-content-between gap-2 text-center"
+            >
               <button
                 onclick="setSelected(1)"
                 class="btn btn__caixas d-flex flex-column justify-content-center align-items-center box1"
@@ -478,13 +548,16 @@
             </div>
             <div class="price__container my-4">
               <p>
-                <strong class="avista">R$148,60 por caixa</strong><br /><span class="avista__economize"
+                <strong class="avista">R$148,60 por caixa</strong><br /><span
+                  class="avista__economize"
                   >Economize R$136,20</span
                 >
               </p>
               <p>
-                <strong>HOJE:</strong> <small>12x</small> <strong class="aprazo">R$49,99</strong><br /><span
-                  >ou <span class="aprazo__economize">R$445,80 à vista</span></span
+                <strong>HOJE:</strong> <small>12x</small>
+                <strong class="aprazo">R$49,99</strong><br /><span
+                  >ou
+                  <span class="aprazo__economize">R$445,80 à vista</span></span
                 >
               </p>
             </div>
@@ -516,9 +589,17 @@
               <li>Cancele quando quiser / Sem Taxas</li>
             </ul>
           </div>
-          <div class="rounded pt-2 d-flex justify-content-center align-items-center" id="checkbox__container">
+          <div
+            class="rounded pt-2 d-flex justify-content-center align-items-center"
+            id="checkbox__container"
+          >
             <p>
-              <img loading="lazy" id="checkbox2" src="./assets/check-icon-mobile.png" alt="checkbox" />
+              <img
+                loading="lazy"
+                id="checkbox2"
+                src="./assets/check-icon-mobile.png"
+                alt="checkbox"
+              />
               <strong>SIM!</strong> Eu quero ser assinante e ganhar <br />
               DESCONTO!
             </p>
@@ -532,21 +613,29 @@
         <div>
           <p>
             <small
-              >Este produto não se destina a dignosticar, tratar, curar ou prevenir qualquer doença, os resultados podem
-              variar de pessoa para pessoa, esses depoimentos podem ser fícticios, esta informação não constitui
-              aconselhamento médico e não deve ser considerada como tal, consulte o seu médico antes de modificar o seu
-              regime médico regular. Este é um advertorial e não um artigo de notícia ou blog. Produto dispensado da
-              obrigatoriedade de registro conforme RDC 27/2010</small
+              >Este produto não se destina a dignosticar, tratar, curar ou
+              prevenir qualquer doença, os resultados podem variar de pessoa
+              para pessoa, esses depoimentos podem ser fícticios, esta
+              informação não constitui aconselhamento médico e não deve ser
+              considerada como tal, consulte o seu médico antes de modificar o
+              seu regime médico regular. Este é um advertorial e não um artigo
+              de notícia ou blog. Produto dispensado da obrigatoriedade de
+              registro conforme RDC 27/2010</small
             >
           </p>
         </div>
         <div class="d-flex text-center justify-content-between">
           <a href="#"
-            ><img loading="lazy" src="./assets/logo_footer-DoutorNature.svg" alt="Logo Doutor Nature" class="w-50 m-2"
+            ><img
+              loading="lazy"
+              src="./assets/logo_footer-DoutorNature.svg"
+              alt="Logo Doutor Nature"
+              class="w-50 m-2"
           /></a>
           <p class="text-start mx-5">
             <small
-              >&copy; 2022 Doutor Nature - Todos os Direitos Reservados - Política de Privacidade | Termos de Uso</small
+              >&copy; 2022 Doutor Nature - Todos os Direitos Reservados -
+              Política de Privacidade | Termos de Uso</small
             >
           </p>
         </div>
